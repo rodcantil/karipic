@@ -19,7 +19,11 @@
             </div>
             <div class="ms-3">
                 <% if current_user %>
-                    Hola <%= current_user.name %>
+                    Hola
+                    <%= current_user.name %>
+                        <% if current_user.admin? %>
+                            <%= current_user.role %>
+                        <% end %>
                 <% else %>
                     Dale registrate o conectate
                 <% end %>

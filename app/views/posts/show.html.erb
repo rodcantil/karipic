@@ -20,7 +20,7 @@
   <%= link_to "Volver a Posts", posts_path, class:"btn btn-dark" %>
   <% if user_signed_in? %> 
     <%= link_to "Nuevo Comentario", new_comment_path(@post), class:"btn btn-dark" %>
-    <% if current_user.id == @post.user_id %>
+    <% if current_user.admin? %>
       <%= link_to "Editar este Post", edit_post_path(@post), class:"btn btn-dark" %>
       <%= button_to "Eliminar", @post, class:"btn btn-danger btn-sm", method: :delete %>
     <% end %>

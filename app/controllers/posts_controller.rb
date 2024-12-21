@@ -1,5 +1,9 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[ show edit update destroy ]
+  before_action only: [ :create, :new, :edit, :update, :destroy ] do
+    authorize_request([ "admin" ])
+  end
+
 
   # GET /posts or /posts.json
   def index

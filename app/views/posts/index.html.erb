@@ -1,16 +1,18 @@
 <p style="color: green"><%= notice %></p>
 
-<% content_for :title, "Posts" %>
+<% content_for :title, "Mis Posteos" %>
 
-<h1>Posts</h1>
+<h1 class="text-center">Mis Posteos</h1>
 
+<p class="text-end">
+  <%= link_to "Nuevo Post", new_post_path, class:"btn boton_ver fw-bold" %>
+</p>
 <div id="posts">
   <% @posts.each do |post| %>
     <%= render post %>
     <p class="text-end">
-        <%= link_to "Ver", post_path(post), class:"btn btn-primary" %>
+        <%= link_to "Ver Post", post_path(post), class:"btn boton_ver fw-bold" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New post", new_post_path %>

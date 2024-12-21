@@ -20,6 +20,6 @@ border-radius: 10px 10px 10px 10px
     overflow: hidden;
 }
 
-.barra, .titulo_comentarios {
+.barra, .titulo_comentarios, .boton_ver {
     background-color: aquamarine;
 }

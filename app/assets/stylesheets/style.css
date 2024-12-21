@@ -1,0 +1,14 @@
+.imagen_post {
+ max-width: 50rem;
+
+
+}
+
+.base_post {
+    height: 250px;
+}
+
+.avatar {
+    clip-path: circle();
+
+}

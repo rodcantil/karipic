@@ -1,5 +1,8 @@
 .imagen_post {
- max-width: 50rem;
+max-width: 60%;
+margin: auto;
+border-radius: 10px 10px 10px 10px
+
 
 
 }
@@ -11,4 +14,12 @@
 .avatar {
     clip-path: circle();
 
+}
+
+.texto_carta {
+    overflow: hidden;
+}
+
+.barra, .titulo_comentarios {
+    background-color: aquamarine;
 }

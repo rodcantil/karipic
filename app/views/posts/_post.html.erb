@@ -1,7 +1,7 @@
 <div id="<%= dom_id post %>">
   <div class="d-flex base_post">
-    <div class="card justify-content-center">
-      <%= image_tag post.images[0], class: 'card-img-top imagen_post' %>
+    <div class="card justify-content-center col-3">
+      <%= image_tag post.images[0], class: 'imagen_post' %>
     </div>
 
       <div class="card">
@@ -9,9 +9,10 @@
         <div class="owner-avatar fw-bold">Dueño :
           <%= post.user.name %>
         </div>
-        <p class="card-text">
+        <p class="card-text texto_carta">
           <strong>Descripcion: </strong><%= post.description%><br>
         </p>
       </div>
     </div>
+
   </div>
